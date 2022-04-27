@@ -1,4 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
+## 0.6.0
+
+### New features
+- Allow multiple SANs in a single domain entry
+
 ## 0.5.0
 ### Others
 - Bump lego version to v4.6.0
