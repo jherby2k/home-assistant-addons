@@ -70,7 +70,7 @@ fi
 # create new certificates
 for domain in $(bashio::config 'domains'); do
     sans=(${$domain//,/ })
-    bashio::log.debug "Checking for certificate ${CERT_PATH}/certificates/${sans[0]}.crt existence "
+    bashio::log.debug "Checking for certificate ${CERT_PATH}/certificates/${sans[0]}.crt existence"
     if [[ ! -f "${CERT_PATH}/certificates/${sans[0]}.crt" ]]; then
         bashio::log.debug "running command: lego ${args} run"
         bashio::log.info "Certificate for domain ${sans[0]} not found, issuing"
