@@ -1,4 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
+## 0.7.0
+
+### Others
+- Bump base image version
+
 ## 0.6.0
 
 ### New features
