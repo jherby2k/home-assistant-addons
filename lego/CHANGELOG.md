@@ -1,4 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
+## 0.7.1
+
+### Bug fix
+- Don't renew wildcard SANs every time
+
 ## 0.7.0
 
 ### Others
