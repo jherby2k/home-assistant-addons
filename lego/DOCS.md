@@ -1,10 +1,10 @@
 # Home Assistant Add-on: Lego
 
-[Logo](https://github.com/go-acme/lego) is a Let's Encrypt client and ACME library written in Go.
+[Lego](https://github.com/go-acme/lego) is a Let's Encrypt client and ACME library written in Go.
 
 ## Installation
 1. Navigate in your Home Assistant frontend to Supervisor -> Add-on Store.
-2. Add the repository via the 3 dots menu > repositories > enter "https://github.com/via-justa/via-justa-home-assistant-addons" > select add
+2. Add the repository via the 3 dots menu > repositories > enter "https://github.com/jherby2k/via-justa-home-assistant-addons" > select add
 2. Find the "lego" add-on and click it.
 3. Click on the "INSTALL" button.
 
