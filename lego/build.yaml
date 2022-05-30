@@ -11,4 +11,4 @@ labels:
   org.opencontainers.image.source: "https://github.com/jherby2k/via-justa-home-assistant-addons"
   org.opencontainers.image.licenses: "Apache License 2.0"
 args:
-  LEGO_VERSION: v4.6.0
+  LEGO_VERSION: v4.7.0
