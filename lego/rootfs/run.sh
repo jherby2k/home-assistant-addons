@@ -72,12 +72,12 @@ for domain in $(bashio::config 'domains'); do
     sans=(${domain//,/ })
     bashio::log.debug "Checking for certificate ${CERT_PATH}/certificates/${sans[0]//[*]/_}.crt existence"
     if [[ ! -f "${CERT_PATH}/certificates/${sans[0]//[*]/_}.crt" ]]; then
-        bashio::log.debug "running command: lego ${args} run"
         bashio::log.info "Certificate for domain ${sans[0]} not found, issuing"
         domainargs=$args
         for san in ${sans[@]}; do
             domainargs="${domainargs} -d ${san}"
         done
+        bashio::log.debug "running command: lego ${domainargs} run"
         lego ${domainargs} run
     else
         bashio::log.info "Certificate for domain ${sans[0]} found"
