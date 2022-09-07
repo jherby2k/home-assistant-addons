@@ -1,4 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
+## 0.7.5
+### Others
+- Bump lego version to v4.8.0
+- Bump Alpine Linux to v3.16
+
 ## 0.7.1
 
 ### Bug fix
