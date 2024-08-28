@@ -5,10 +5,6 @@ Repository for Home Assistant addons
 
 ## Add-ons provided by this repository
 
--  **[ddns-client](./ddns-client/README.md)**
-
-    DynDNS client to update dns record(s) with your current IP if your IP is not static
-
 - **[lego](./lego/README.md)**
 
     Let's Encrypt client and ACME library written in Go.
