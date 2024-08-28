@@ -53,7 +53,6 @@ bashio::log.info "using challenge ${challenge}"
 
 args="--accept-tos --email $(bashio::config 'email') --path ${CERT_PATH}"
 
-
 # Log domain list
 for domain in $(bashio::config 'domains'); do
     sans=(${domain//,/ })
