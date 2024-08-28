@@ -4,7 +4,7 @@
 
 ## Installation
 1. Navigate in your Home Assistant frontend to Supervisor -> Add-on Store.
-2. Add the repository via the 3 dots menu > repositories > enter "https://github.com/jherby2k/via-justa-home-assistant-addons" > select add
+2. Add the repository via the 3 dots menu > repositories > enter "https://github.com/jherby2k/home-assistant-addons" > select add
 2. Find the "lego" add-on and click it.
 3. Click on the "INSTALL" button.
 
