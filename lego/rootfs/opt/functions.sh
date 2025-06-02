@@ -32,13 +32,13 @@ update() {
 		args="${args} -d ${san}"
 	done
 
-        bashio::log.debug "running command: lego ${args} renew --days ${renew_threshold} --renew-hook /opt/restart_ha_hook.sh"
         bashio::log.info "Certificate for domain ${domain} found, checking if renew needed"
         if $(bashio::config 'restart'); then
+	    bashio::log.debug "running command: lego ${args} renew --days ${renew_threshold} --renew-hook /opt/restart_ha_hook.sh"
             lego ${args} renew --days ${renew_threshold} --renew-hook /opt/restart_ha_hook.sh
         else
+	    bashio::log.debug "running command: lego ${args} renew --days ${renew_threshold}"
             lego ${args} renew --days ${renew_threshold}
-            bashio::log.info "Certificate for domain ${domain} was renewed. Manual restart of Home-Assistant is required"
         fi
     done
 }
